@@ -5,6 +5,9 @@
         
       
       }
+      ul{
+        display: inline !important;
+      }
       
       /* Remove the jumbotron's default bottom margin */ 
        div.jumbotron {
