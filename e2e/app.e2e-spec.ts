@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('health-hack App', () => {
+describe('mean-angular5 App', () => {
   let page: AppPage;
 
   beforeEach(() => {
