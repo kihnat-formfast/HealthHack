@@ -8,6 +8,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ModulesComponent } from './components/modules/modules.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 
@@ -19,7 +20,8 @@ import { ModulesComponent } from './components/modules/modules.component';
     SignupComponent,
     HomepageComponent,
     NavbarComponent,
-    ModulesComponent
+    ModulesComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule
