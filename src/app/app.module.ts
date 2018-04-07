@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { BadgesComponent } from './components/badges/badges.component';
 
 
 
@@ -17,7 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     SignupComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    BadgesComponent
   ],
   imports: [
     BrowserModule
