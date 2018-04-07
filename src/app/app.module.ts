@@ -9,8 +9,21 @@ import { BookComponent } from './book/book.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookCreateComponent } from './book-create/book-create.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
+import { HomeComponent } from './home/home.component';
+import { componentFactoryName } from '@angular/compiler';
+import { SkillsComponent } from './skills/skills.component';
 
 const appRoutes: Routes = [
+  {
+    path: 'homes',
+    component: HomeComponent,
+    data: {title: 'Home Page'}
+  },
+  {
+    path: 'skills',
+    component: SkillsComponent,
+    data: {title: 'Skills Page'}
+  },
   {
     path: 'books',
     component: BookComponent,
@@ -32,7 +45,7 @@ const appRoutes: Routes = [
     data: { title: 'Edit Book' }
   },
   { path: '',
-    redirectTo: '/books',
+    redirectTo: '/homes',
     pathMatch: 'full'
   }
 ];
@@ -42,7 +55,9 @@ const appRoutes: Routes = [
     BookComponent,
     BookDetailComponent,
     BookCreateComponent,
-    BookEditComponent
+    BookEditComponent,
+    HomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
