@@ -11,13 +11,19 @@
     <h2>Sign Up</h2>
     <form id="signup">
       <label>GamerTag:</label>
-      <input type="text" name="username" class="span3">
+      <input type="text" name="gamerTag" class="span3">
       <label>Email Address:</label>
       <input type="email" name="email" class="span3">
       <label>Password:</label>
       <input type="password" name="password" class="span3">
-      <button class="btn btn-primary">Submit</button>     
+      <button (click)="onSubmit()" class="btn btn-primary">Submit</button>     
       <button class="btn btn-primary mr-1">Already a member? Login</button>
+      <!-- <button type="button" class="btn btn-primary-outline pull-right" (click)="btnClick();"><i class="fa fa-plus"></i> Add</button>     -->
+      
+      
+      <!-- btnClick= function () {
+              this.router.navigateByUrl('/user');
+      }; -->
 
       <!-- <input type="submit" value="Sign up" class="btn btn-primary pull-right"> -->
       <div class="clearfix"></div>
