@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BadgesComponent implements OnInit {
 
+  badges: any;
+
   constructor() { }
 
   ngOnInit() {
+    this.badges = [
+      {name: "Brainiac"},
+      {name: "Charmer"},
+      {name: "Hulk"},
+      {name: "Monkey"},
+      {name: "The Rock"},
+      {name: "Sage"},
+      {name: "Streak"}
+    ];
   }
 
 }
