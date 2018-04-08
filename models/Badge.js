@@ -6,6 +6,7 @@ var BadgeSchema = new mongoose.Schema({
   BadgeLevel: Number,
   RequiredSkill: String,
   SkillLevel: Number,
+  Url: String,
 });
 
 module.exports = mongoose.model('badges', BadgeSchema);

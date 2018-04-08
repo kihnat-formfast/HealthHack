@@ -1,0 +1,16 @@
+<app-home></app-home>
+<div class="container">
+  
+  <div style="position:relative; top:200px;"></div> 
+      <div class="col-sm-4" *ngFor="let module of modules"> 
+        <div class="panel panel-primary">
+          <div class="panel-heading">{{module.Name}}</div>
+          <div class="panel-body"><img src={{module.Url}} class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">         
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  
+  <footer class="container-fluid text-center">
+  </footer>
