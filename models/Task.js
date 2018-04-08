@@ -6,4 +6,6 @@ var TaskSchema = new mongoose.Schema({
   Stat: String,
   Module: Number,
 });
+
+
 module.exports = mongoose.model('Task', TaskSchema);

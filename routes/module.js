@@ -1,52 +1,43 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Task = require('../models/Task.js');
+var Module = require('../models/Module.js');
 
-/* GET ALL TaskS */
+/* GET ALL ModuleS */
 router.get('/', function(req, res, next) {
-  Task.find(function (err, products) {
+  Module.find(function (err, products) {
     if (err) return next(err);
     res.json(products);
   });
 });
-/* GET 6 tasks */
-router.get('/top/', function(req, res, next) {
-  resp = any;
-  Task.findById(1, function (err, post) {
-    if (err) return next(err);
-    resp.push(post);
-  });
-  res.json(resppost);
-});
 
-/* GET SINGLE Task BY ID */
+/* GET SINGLE Module BY ID */
 router.get('/:id', function(req, res, next) {
-  Task.findById(req.params.id, function (err, post) {
+  Module.findById(req.params.id, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* SAVE Task */
+/* SAVE Module */
 router.post('/', function(req, res, next) {
-  Task.create(req.body, function (err, post) {
+  Module.create(req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* UPDATE Task */
+/* UPDATE Module */
 router.put('/:id', function(req, res, next) {
-  Task.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+  Module.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
 });
 
-/* DELETE Task */
+/* DELETE Module */
 router.delete('/:id', function(req, res, next) {
-  Task.findByIdAndRemove(req.params.id, req.body, function (err, post) {
+  Module.findByIdAndRemove(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
     res.json(post);
   });
