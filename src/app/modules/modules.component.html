@@ -1,0 +1,73 @@
+<app-home></app-home>
+<div class="container">
+  
+  <div style="position:relative; top:200px;">CR</div> 
+    <!-- <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Wisdom</div>
+          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">      
+  
+          <progress value="0" max="100" id=p1>50%</progress>
+          <input type=button value='Increase'></div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel panel-primary">
+          <div class="panel-heading">Intelligence</div>
+          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">
+            
+            <progress value="0" max="100" id=p1>50%</progress>
+            <input type=button value='Increase'>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel panel-primary">
+          <div class="panel-heading">Charisma</div>
+          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">        
+  
+            <progress value="0" max="100" id=p2>50%</progress>
+            <input type=button value='Increase' ></div>
+        </div>
+      </div>
+    </div> -->
+  </div><br>
+  
+  <div class="container">    
+    <div class="row">
+      <!-- <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Strength</div>
+          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">         
+  
+          <progress value="0" max="100" id=p1>50%</progress>
+          <input type=button value='Increase'></div>
+        </div>
+      </div> -->
+      <div class="col-sm-4" *ngFor="let modules of modules"> 
+        <div class="panel panel-primary">
+          <div class="panel-heading">{{modules.modName}}</div>
+          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">         
+        </div>
+      </div>
+      <!-- <div class="col-sm-4"> 
+        <div class="panel panel-primary">
+          <div class="panel-heading">Constitution</div>
+          <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">         
+  
+          <progress value="0" max="100" id=p1>50%</progress>
+          <input type=button value='Increase'></div>
+        </div>
+      </div> -->
+    </div>
+  </div><br><br>
+  
+  <footer class="container-fluid text-center">
+  </footer>

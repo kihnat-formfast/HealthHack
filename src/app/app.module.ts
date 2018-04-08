@@ -11,10 +11,11 @@ import { BookCreateComponent } from './book-create/book-create.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { HomeComponent } from './home/home.component';
 import { componentFactoryName } from '@angular/compiler';
-import { SkillsComponent } from './skills/skills.component';
+import { ModulesComponent } from './modules/modules.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { BadgesComponent } from './badges/badges.component';
 
 const appRoutes: Routes = [
   {
@@ -23,9 +24,9 @@ const appRoutes: Routes = [
     data: {title: 'Home Page'}
   },
   {
-    path: 'skills',
-    component: SkillsComponent,
-    data: {title: 'Skills Page'}
+    path: 'modules',
+    component: ModulesComponent,
+    data: {title: 'Modules Page'}
   },
   {
     path: 'task',
@@ -46,6 +47,11 @@ const appRoutes: Routes = [
     path: 'tasks',
     component: TasksComponent,
     data: { title: 'Task List' }
+  },
+  {
+    path: 'badges',
+    component: BadgesComponent,
+    data: {title: 'Badge List'}
   },
   {
     path: 'books',
@@ -80,10 +86,11 @@ const appRoutes: Routes = [
     BookCreateComponent,
     BookEditComponent,
     HomeComponent,
-    SkillsComponent,
+    ModulesComponent,
     TasksComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    BadgesComponent
   ],
   imports: [
     BrowserModule,
