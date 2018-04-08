@@ -18,6 +18,13 @@ export class TasksComponent implements OnInit {
       console.log(data);
       this.tasks = data;
     });
+   if (this.tasks = []) 
+   {
+     this.tasks =[
+      { name: "Go for a run!" },
+      { name: "Eat Healthy!" }
+    ];
+   }
   }
 
 
