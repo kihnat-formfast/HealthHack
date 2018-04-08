@@ -12,6 +12,8 @@ import { BookEditComponent } from './book-edit/book-edit.component';
 import { HomeComponent } from './home/home.component';
 import { componentFactoryName } from '@angular/compiler';
 import { SkillsComponent } from './skills/skills.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const appRoutes: Routes = [
   {
@@ -23,6 +25,16 @@ const appRoutes: Routes = [
     path: 'skills',
     component: SkillsComponent,
     data: {title: 'Skills Page'}
+  },
+  {
+    path: 'tasks',
+    component: TasksComponent,
+    data: {title: 'Tasks Page'}
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    data: {title: 'Profile Page'}
   },
   {
     path: 'books',
@@ -57,7 +69,9 @@ const appRoutes: Routes = [
     BookCreateComponent,
     BookEditComponent,
     HomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    TasksComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
