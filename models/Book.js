@@ -13,18 +13,16 @@ var data = [];
 db.serialize(() => {
   db.each(`SELECT Id as id,
                   Name as name
-           FROM Modules`, (err, row) => {
+           FROM Badges`, (err, row) => {
     if (err) {
       console.error(err.message);
     }
-    //console.log(row.id + "\t" + row.name);
-    data.push(row.name);
+    console.log(row.id + "\t" + row.name);
+    data.push({title: row.id, author: row.name});
   });
+  // console.log(data);
+  // module.exports = data;
 });
-console.log('test');
- 
-console.log(data);
- 
 // close the database connection
 db.close((err) => {
   if (err) {
@@ -33,3 +31,8 @@ db.close((err) => {
   console.log('Close the database connection.');
 });
 module.exports = [ {title: 'Test', author: 'Author here'}];
+
+// console.log('test2');
+ 
+// console.log(data);
+

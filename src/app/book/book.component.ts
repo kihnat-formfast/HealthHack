@@ -14,10 +14,13 @@ export class BookComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
+    console.log('LOOK HERE FUCKWIT');
+    this.http.get('../models/book').subscribe(data => {
+      
       console.log(data);
       this.books = data;
     });
+    this.books = [ {title: 'Test', author: 'Author here'}];
   }
 
 }
