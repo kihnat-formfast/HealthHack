@@ -14,6 +14,7 @@ import { componentFactoryName } from '@angular/compiler';
 import { SkillsComponent } from './skills/skills.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {
@@ -35,6 +36,11 @@ const appRoutes: Routes = [
     path: 'profile',
     component: ProfileComponent,
     data: {title: 'Profile Page'}
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    data: {title: "Login Page"}
   },
   {
     path: 'books',
@@ -71,7 +77,8 @@ const appRoutes: Routes = [
     HomeComponent,
     SkillsComponent,
     TasksComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
