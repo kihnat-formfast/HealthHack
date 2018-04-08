@@ -15,7 +15,7 @@ export class BookComponent implements OnInit {
 
   ngOnInit() {
     console.log('LOOK HERE FUCKWIT');
-    this.http.get('../models/book').subscribe(data => {
+    this.http.get('/models/book').subscribe(data => {
       
       console.log(data);
       this.books = data;

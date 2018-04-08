@@ -463,7 +463,7 @@ var BookComponent = (function () {
     BookComponent.prototype.ngOnInit = function () {
         var _this = this;
         console.log('LOOK HERE FUCKWIT');
-        this.http.get('../models/book').subscribe(function (data) {
+        this.http.get('/models/book').subscribe(function (data) {
             console.log(data);
             _this.books = data;
         });
