@@ -8,5 +8,4 @@ var BadgeSchema = new mongoose.Schema({
   SkillLevel: Number,
 });
 
-
-module.exports = mongoose.model('Badge', BadgeSchema);
+module.exports = mongoose.model('badges', BadgeSchema);
