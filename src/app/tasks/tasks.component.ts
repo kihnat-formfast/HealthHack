@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-tasks',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
- data = [{Name: "Go for a run" }, {Name: "Take a shower"}];
+  tasks : any;
+
   constructor() { }
 
   ngOnInit() {
+    this.tasks = [
+      {name: "Go for a run!"},
+      {name: "Eat Healthy!"}
+    ];
   }
 
 }
