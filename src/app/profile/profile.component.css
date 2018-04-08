@@ -1,10 +1,10 @@
-/* #wrapper {
+#wrapper {
     text-align: center;
   }
   #yourdiv {
     display: inline-block;
   } 
-  */
+ 
 
   /* Remove the navbar's default rounded borders and increase the bottom margin */ 
   .navbar {
