@@ -13,12 +13,13 @@ export class TasksComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
+    this.http.get('/task').subscribe(data => {
+      console.log("BALLIN");
       console.log(data);
       this.tasks = data;
     });
   }
- //data = [{Name: "Go for a run" }, {Name: "Take a shower"}];
+
 
 
 }

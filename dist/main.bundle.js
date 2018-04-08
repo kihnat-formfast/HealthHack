@@ -126,7 +126,7 @@ var appRoutes = [
         data: { title: 'Skills Page' }
     },
     {
-        path: 'tasks',
+        path: 'task',
         component: __WEBPACK_IMPORTED_MODULE_12__tasks_tasks_component__["a" /* TasksComponent */],
         data: { title: 'Tasks Page' }
     },
@@ -139,6 +139,11 @@ var appRoutes = [
         path: 'login',
         component: __WEBPACK_IMPORTED_MODULE_14__login_login_component__["a" /* LoginComponent */],
         data: { title: "Login Page" }
+    },
+    {
+        path: 'tasks',
+        component: __WEBPACK_IMPORTED_MODULE_12__tasks_tasks_component__["a" /* TasksComponent */],
+        data: { title: 'Task List' }
     },
     {
         path: 'books',
@@ -825,7 +830,8 @@ var TasksComponent = (function () {
     }
     TasksComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.http.get('/book').subscribe(function (data) {
+        this.http.get('/task').subscribe(function (data) {
+            console.log("BALLIN");
             console.log(data);
             _this.tasks = data;
         });
