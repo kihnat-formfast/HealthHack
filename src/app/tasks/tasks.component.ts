@@ -18,13 +18,12 @@ export class TasksComponent implements OnInit {
       console.log(data);
       //limited: data.find(function(elem) {return elem.Id < 10;});
 
-      var array1 = [5, 12, 8, 130, 44];
+      const myObj = [{"id":1,"text":"Mary"},{"id":2,"text":"Nancy"},{"id":3,"text":"Paul"},{"id":4,"text":"Cheryl"},{"id":5,"text":"Frances"}];
 
-      var found = array1.find(function (element) {
-        return element > 10;
-      });
+      const selectedIds = myObj.map(({ id }) => id);
+      
+      console.log(selectedIds);
 
-      console.log(found);
 
       this.tasks = data;
     });
