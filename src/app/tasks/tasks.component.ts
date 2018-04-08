@@ -14,17 +14,10 @@ export class TasksComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('/task').subscribe(data => {
-      console.log("BALLIN");
+      console.log("Data imported from Database");
       console.log(data);
       this.tasks = data;
     });
-   if (this.tasks = []) 
-   {
-     this.tasks =[
-      { name: "Go for a run!" },
-      { name: "Eat Healthy!" }
-    ];
-   }
   }
 
 

@@ -1,8 +1,9 @@
 var mongoose = require('mongoose');
 
 var TaskSchema = new mongoose.Schema({
-  id: Number,
-  name: String,
+  Id: Number,
+  Name: String,
+  Stat: String,
+  Module: Number,
 });
-//module.exports = [{Name: "Go for a run" }, {Name: "Take a shower"}];
 module.exports = mongoose.model('Task', TaskSchema);

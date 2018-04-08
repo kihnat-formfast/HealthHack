@@ -802,7 +802,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/tasks/tasks.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-home></app-home>\r\n<div>\r\n  <table>\r\n    <tbody>\r\n      <tr>\r\n        <td><label class=\"header\">Daily Goal: </label>\r\n            <label>Take your meds today!</label>\r\n        </td>\r\n        <td>\r\n          <Button class=\"addBtn\">\r\n            <span class=\"glyphicon glyphicon-check\"></span>\r\n          </Button>\r\n        </td>\r\n      </tr>\r\n      <!-- <tr *ngFor=\"let tasks\">\r\n        <td>\r\n          <label>{{tasks.name}}</label>\r\n        </td>\r\n        <td>\r\n          <Button class=\"addBtn\">\r\n            <span class=\"glyphicon glyphicon-check\"></span>\r\n          </Button>\r\n        </td>\r\n      </tr> -->\r\n      <tr *ngFor=\"let task of tasks\">\r\n          <td>\r\n            <label>{{task.name}}</label>\r\n          </td>\r\n          <td>\r\n            <Button class=\"addBtn\">\r\n              <span class=\"glyphicon glyphicon-check\"></span>\r\n            </Button>\r\n          </td>\r\n        </tr>\r\n       \r\n  </table>\r\n</div>\r\n\r\n\r\n<div class='panel-footer'>\r\n  <a class='btn btn-default' [routerLink]=\"['/homes']\" style='width:80px'>\r\n    <i class='glyphicon glyphicon-chevron-left'></i> Back\r\n  </a>\r\n</div>"
+module.exports = "<app-home></app-home>\r\n<div>\r\n  <table>\r\n    <tbody>\r\n      <tr>\r\n        <td><label class=\"header\">Daily Goal: </label>\r\n            <label>Take your meds today!</label>\r\n        </td>\r\n        <td>\r\n          <Button class=\"addBtn\">\r\n            <span class=\"glyphicon glyphicon-check\"></span>\r\n          </Button>\r\n        </td>\r\n      </tr>\r\n      <!-- <tr *ngFor=\"let tasks\">\r\n        <td>\r\n          <label>{{tasks.name}}</label>\r\n        </td>\r\n        <td>\r\n          <Button class=\"addBtn\">\r\n            <span class=\"glyphicon glyphicon-check\"></span>\r\n          </Button>\r\n        </td>\r\n      </tr> -->\r\n      <tr *ngFor=\"let task of tasks\">\r\n          <td>\r\n            <label>{{task.Name}}</label>\r\n          </td>\r\n          <td>\r\n            <Button class=\"addBtn\">\r\n              <span class=\"glyphicon glyphicon-check\"></span>\r\n            </Button>\r\n          </td>\r\n        </tr>\r\n       \r\n  </table>\r\n</div>\r\n\r\n\r\n<div class='panel-footer'>\r\n  <a class='btn btn-default' [routerLink]=\"['/homes']\" style='width:80px'>\r\n    <i class='glyphicon glyphicon-chevron-left'></i> Back\r\n  </a>\r\n</div>"
 
 /***/ }),
 
@@ -831,16 +831,10 @@ var TasksComponent = (function () {
     TasksComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.http.get('/task').subscribe(function (data) {
-            console.log("BALLIN");
+            console.log("Data imported from Database");
             console.log(data);
             _this.tasks = data;
         });
-        if (this.tasks = []) {
-            this.tasks = [
-                { name: "Go for a run!" },
-                { name: "Eat Healthy!" }
-            ];
-        }
     };
     TasksComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
