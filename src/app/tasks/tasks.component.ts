@@ -13,18 +13,9 @@ export class TasksComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('/task/top').subscribe(data => {
+    this.http.get('/task').subscribe(data => {
       console.log("Data imported from Database");
       console.log(data);
-      //limited: data.find(function(elem) {return elem.Id < 10;});
-
-      const myObj = [{"id":1,"text":"Mary"},{"id":2,"text":"Nancy"},{"id":3,"text":"Paul"},{"id":4,"text":"Cheryl"},{"id":5,"text":"Frances"}];
-
-      const selectedIds = myObj.map(({ id }) => id);
-      
-      console.log(selectedIds);
-
-
       this.tasks = data;
     });
   }

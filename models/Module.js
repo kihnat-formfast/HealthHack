@@ -5,5 +5,4 @@ var ModuleSchema = new mongoose.Schema({
   Name: String,
 });
 
-
 module.exports = mongoose.model('Module', ModuleSchema);
