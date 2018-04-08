@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
+var task = require('./routes/task');
 var book = require('./routes/book');
 var app = express();
 
@@ -17,6 +18,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use('/tasks', express.static(path.join(__dirname, 'dist')));
+app.use('/task', task);
 app.use('/books', express.static(path.join(__dirname, 'dist')));
 app.use('/book', book);
 

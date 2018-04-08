@@ -12,19 +12,19 @@
           </Button>
         </td>
       </tr>
-      <tr>
+      <!-- <tr *ngFor="let tasks">
         <td>
-          <label>Go for a run</label>
+          <label>{{tasks.name}}</label>
         </td>
         <td>
           <Button class="addBtn">
             <span class="glyphicon glyphicon-check"></span>
           </Button>
         </td>
-      </tr>
-      <tr>
+      </tr> -->
+      <tr *ngFor="let task of tasks">
           <td>
-            <label>Eat Healthy</label>
+            <label>{{task.Name}}</label>
           </td>
           <td>
             <Button class="addBtn">
@@ -32,26 +32,7 @@
             </Button>
           </td>
         </tr>
-        <tr>
-            <td>
-              <label>Try something new</label>
-            </td>
-            <td>
-              <Button class="addBtn">
-                <span class="glyphicon glyphicon-check"></span>
-              </Button>
-            </td>
-          </tr>
-          <tr>
-              <td>
-                <label>Say Hello to a stranger</label>
-              </td>
-              <td>
-                <Button class="addBtn">
-                  <span class="glyphicon glyphicon-check"></span>
-                </Button>
-              </td>
-            </tr>
+       
   </table>
 </div>
 

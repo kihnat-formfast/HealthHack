@@ -28,7 +28,7 @@ const appRoutes: Routes = [
     data: {title: 'Skills Page'}
   },
   {
-    path: 'tasks',
+    path: 'task',
     component: TasksComponent,
     data: {title: 'Tasks Page'}
   },
@@ -41,6 +41,11 @@ const appRoutes: Routes = [
     path: 'login',
     component: LoginComponent,
     data: {title: "Login Page"}
+  },
+  {
+    path: 'tasks',
+    component: TasksComponent,
+    data: { title: 'Task List' }
   },
   {
     path: 'books',
