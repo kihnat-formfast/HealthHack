@@ -6,11 +6,11 @@
 <br>
 <div class="container">
   <div class="row">
-    <div class="col-sm-4" *ngFor="let badges of badges">
+    <div class="col-sm-4" *ngFor="let badge of badges">
       <div class="panel panel-primary">
-        <div class="panel-heading">{{badges.Name}}</div>
+        <div class="panel-heading">{{badge.Name}}</div>
         <div class="panel-body">
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+          <img src={{badge.Url}} class="img-responsive" style="width:100%" alt="Image">
         </div>
         <div class="panel-footer">
         </div>
