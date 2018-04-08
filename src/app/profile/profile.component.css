@@ -1,8 +1,84 @@
-#wrapper {
-    background-color: green; /* for vizualization purposes */
+/* #wrapper {
     text-align: center;
   }
   #yourdiv {
-    background-color: red; /* for vizualization purposes */
     display: inline-block;
+  } 
+  */
+
+  /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+  .navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+    
+  
+  }
+  
+  /* Remove the jumbotron's default bottom margin */ 
+   .jumbotron {
+    background: #c0dbfc;
+    margin-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    
+
+  }
+ 
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+    
+    
+  }
+.card {
+  float:left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  float:left;
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+#shrink{
+  -webkit-transform:scale(0.5);
+  -moz-transform:scale(0.5);
+  -ms-transform:scale(0.5);
+  transform:scale(0.5);
   }
