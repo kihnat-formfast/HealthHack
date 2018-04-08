@@ -5,6 +5,8 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var task = require('./routes/task');
+var module = require('./routes/module');
+var badge = require('./routes/badge');
 var book = require('./routes/book');
 var app = express();
 
@@ -18,6 +20,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use('/modules', express.static(path.join(__dirname, 'dist')));
+app.use('/module', module);
+app.use('/badges', express.static(path.join(__dirname, 'dist')));
+app.use('/badge', badge);
 app.use('/tasks', express.static(path.join(__dirname, 'dist')));
 app.use('/task', task);
 app.use('/books', express.static(path.join(__dirname, 'dist')));
